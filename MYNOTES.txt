@@ -1,0 +1,17 @@
+1)Uncomment while following lines from php.ini file while connected to postgresssql
+extension=php_pgsql.dll
+extension=php_pdo_pgsql.dll
+
+2)Make following changes in ckaephp's App/Congig/core.php to remove warnnings form first page
+	Configure::write('Security.salt', '4a3dkahfgm8ZXKKsJpYeDeTfpj8VbSZVe7E0vraZ2FozqhSBHwPqm0n0jCaCZ3r');
+	Configure::write('Security.cipherSeed', '123t12537861238947390450456078935236');
+
+3)Check Following url
+http://localhost/HelloWorld/Posts/hello_world
+IF everything is green tabs then no problem
+
+4)Create Table syntax in postgress sql     schemaname.tablename
+CREATE TABLE testschema.posts ( id SERIAL PRIMARY KEY, 
+title VARCHAR(50), body TEXT, 
+created DATE DEFAULT NULL, 
+modified DATE DEFAULT NULL );

@@ -1,0 +1,22 @@
+/* CSS Document */
+h3{
+    font-family: Arail; 
+    font-size: 18pt;
+    font-style: normal;
+    font-weight: bold; 
+    color:SlateBlue;
+    text-align: center;
+    text-decoration: underline
+}
+table.inner{
+    border: 0px;
+}
+td {
+    padding: 2px;
+}
+
+
+
+/**
+font-size: 13px;
+Layout **/
